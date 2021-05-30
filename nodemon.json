@@ -1,0 +1,10 @@
+{
+    "env": {
+        "MONGO_USER": "mitanshu",
+        "MONGO_PASSWORD": "Mitanshu123",
+        "MONGO_DEFAULT_DATABASE": "knowYourIndia_REST",
+        "SENDGRID_API_KEY": "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",
+        "SENDGRID_EMAIL": "mitanshukr01@gmail.com",
+        "ROOT_URL": "http://localhost:3000"
+    }
+}

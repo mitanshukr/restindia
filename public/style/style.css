@@ -1,0 +1,16 @@
+body {
+  font-family: Verdana, sans-serif !important;
+}
+
+h3 {
+  font-size: 1.1em !important;
+  color: #686887 !important;
+}
+
+.menu a.level-2 {
+  font-weight: bolder !important;
+}
+
+.content pre > code {
+  font-size: 0.95em !important;
+}
