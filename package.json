@@ -1,15 +1,14 @@
 {
   "name": "restindia-rest-api",
   "version": "1.0.0",
-  "description": "a RESTful API to get Indian States and Districts information.",
+  "description": "a RESTful API to get Indian States, Union Territories, and Districts information.",
   "main": "app.js",
   "engines": {
     "node": "14.16.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon app.js",
-    "start": "SET NODE_ENV=development&&SET MONGO_USER=mitanshu&&SET MONGO_PASSWORD=Mitanshu123&&SET MONGO_DEFAULT_DATABASE=knowYourIndia_REST&&SET SENDGRID_API_KEY=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&&SET SENDGRID_EMAIL=mitanshukr01@gmail.com&&SET ROOT_URL=http://localhost:3000&&node app.js"
+    "start:dev": "nodemon app.js"
   },
   "author": "Mitanshu Kumar",
   "license": "ISC",
