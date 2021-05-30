@@ -26,7 +26,7 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.setHeader(
     "Content-Security-Policy",
-    "script-src 'self' 'nonce-1hwfwf2r332hiuh' http://ajax.googleapis.com/ https://cdn.rawgit.com/"
+    "script-src 'self' 'nonce-1hwfwf2r332hiuh' https://ajax.googleapis.com/ https://cdn.rawgit.com/"
   );
 
   if (req.method === "OPTIONS") {
