@@ -4,7 +4,7 @@ A **RESTful API** to provide information about Indian States, Union territories 
 
 _Version: 1.0.0_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://www.travis-ci.com/mitanshukr/restindia.svg?branch=main)](https://www.travis-ci.com/mitanshukr/restindia)
 
 REST INDIA Restful API, built with Express.js and Mongodb, provides data of Indian States, Union territories and Districts with rich Endpoints to sort, search, and filter the response data.
 
