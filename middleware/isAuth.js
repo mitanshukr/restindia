@@ -20,7 +20,7 @@ module.exports = (req, res, next) => {
   try {
     decodedToken = jwt.verify(
       authToken,
-      "secretPassword&re7%efer45%$hhk55hj&*nbb4f$f00@99fsae;"
+      process.env.JWT_SECRET
     );
   } catch (err) {
     err.status = 401;
