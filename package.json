@@ -7,7 +7,6 @@
     "node": "14.16.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified",
     "start:dev": "nodemon app.js"
   },
   "author": "Mitanshu Kumar",
