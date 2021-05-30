@@ -51,7 +51,7 @@ exports.postLogin = (req, res, next) => {
           userId: loadedUser._id.toString(),
           message: "Do not share the Token with anyone. Token is valid for an hour."
         },
-        "secretPassword&re7%efer45%$hhk55hj&*nbb4f$f00@99fsae;",
+        process.env.JWT_SECRET,
         { expiresIn: "1h" }
       );
       res
