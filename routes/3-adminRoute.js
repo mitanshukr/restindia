@@ -44,6 +44,10 @@ const User = require("../models/user");
  *            type: array
  *            items:
  *             type: string
+ *          blocks:
+ *            type: integer
+ *          subdivisions:
+ *            type: integer
  *          districts:
  *            type: integer
  *          sexRatio:
@@ -52,13 +56,15 @@ const User = require("../models/user");
  *            type: integer
  *          population:
  *            type: integer
+ *          area:
+ *            type: integer
  *          censusYear:
  *            type: integer
  *          officialWebsite:
  *            type: string
  *          emblem:
  *            type: string
- *          langauges:
+ *          languages:
  *            type: array
  *            items:
  *             type: string
@@ -203,6 +209,10 @@ inputValidator.postDistrict, adminControllers.postDistrict);
  *            type: array
  *            items:
  *             type: string
+ *          blocks:
+ *            type: integer
+ *          subdivisions:
+ *            type: integer
  *          districts:
  *            type: integer
  *          sexRatio:
@@ -211,13 +221,13 @@ inputValidator.postDistrict, adminControllers.postDistrict);
  *            type: integer
  *          population:
  *            type: integer
+ *          area:
+ *            type: integer
  *          censusYear:
  *            type: integer
  *          officialWebsite:
  *            type: string
- *          emblem:
- *            type: string
- *          langauges:
+ *          languages:
  *            type: array
  *            items:
  *             type: string
