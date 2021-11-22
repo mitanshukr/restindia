@@ -17,23 +17,29 @@ app.use(express.json()); //body-parser
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/image", express.static(path.join(__dirname, "public", "images")));
 
-app.use(helmet());
 app.use(compression());
+app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
+
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PATCH");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  res.setHeader(
-    "Content-Security-Policy",
-    "script-src 'self' 'nonce-1hwfwf2r332hiuh' https://ajax.googleapis.com/ https://cdn.rawgit.com/"
-  );
+//   res.setHeader(
+//     "Content-Security-Policy",
+//     "script-src 'self' 'nonce-1hwfwf2r332hiuh' https://ajax.googleapis.com/ https://cdn.rawgit.com/"
+//   );
 
-  if (req.method === "OPTIONS") {
-    res.sendStatus(200);
-  } else {
-    next();
-  }
+//   if (req.method === "OPTIONS") {
+//     res.sendStatus(200);
+//   } else {
+//     next();
+//   }
 });
 
 const options = {
