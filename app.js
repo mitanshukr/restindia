@@ -18,12 +18,12 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/image", express.static(path.join(__dirname, "public", "images")));
 
 app.use(compression());
-app.use(helmet());
-app.use(
-  helmet({
-    contentSecurityPolicy: false,
-  })
-);
+// app.use(helmet());
+// app.use(
+//   helmet({
+//     contentSecurityPolicy: false,
+//   })
+// );
 
 
 app.use((req, res, next) => {
