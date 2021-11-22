@@ -28,18 +28,18 @@ app.use(
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PATCH");
+  res.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET, POST, PATCH");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 //   res.setHeader(
 //     "Content-Security-Policy",
 //     "script-src 'self' 'nonce-1hwfwf2r332hiuh' https://ajax.googleapis.com/ https://cdn.rawgit.com/"
 //   );
 
-//   if (req.method === "OPTIONS") {
-//     res.sendStatus(200);
-//   } else {
-//     next();
-//   }
+  if (req.method === "OPTIONS") {
+    res.sendStatus(200);
+  } else {
+    next();
+  }
 });
 
 const options = {
